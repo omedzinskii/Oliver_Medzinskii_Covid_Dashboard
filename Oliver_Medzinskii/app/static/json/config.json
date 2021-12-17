@@ -1,0 +1,17 @@
+
+{
+    
+    "test_data_file":"app/static/data/nation_2021-10-28.csv",
+    
+    "location_local": "Exeter", 
+    "locationType_local":"ltla",
+
+    "location_national": "England", 
+    "locationType_national":"nation",
+
+    "custom_covid_terms":"Covid COVID-19 coronavirus",
+    "news_api_key":"fa911b96da8e420896662203b484274c"
+
+}
+
+
