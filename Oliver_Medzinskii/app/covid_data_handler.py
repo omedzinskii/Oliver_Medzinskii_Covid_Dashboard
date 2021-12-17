@@ -384,8 +384,8 @@ def update_cached_data(update_type, user_update_sched, update_interval, update_n
                     process_national_data(force_update=True)
                 except:
                     logging.error("Exception occurred", exc_info=True)
-                    updates.remove(update)
-                    logging.info("Scheduled covid event has completed")
+                updates.remove(update)
+                logging.info("Scheduled covid event has completed")
             if update_type == "news":
                 try:
                     update_news(force_update=True)
