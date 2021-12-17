@@ -11,8 +11,12 @@ from app.covid_news_handling import NEWS_API_REQUEST_CACHE, news_API_request, \
 #-------- OPEN ----------- UnitTests ---------------------------------------------------------------
 #---------------------------------------------------------------------------------------------------
 def test_news_API_request_cached():
-    #check if cache is empty
+    #Initialise cache object, it will be full as update_news is executed on load of app. 
+    #Empty cache and then test its empty, then can call news api request cached function
     news_cache = NEWS_API_REQUEST_CACHE
+    assert len(news_cache) == 1
+    #check if cache is empty
+    news_cache.clear()
     assert len(news_cache) == 0
     #execute caching function
     news_API_request_cached(covid_terms="Covid COVID-19 coronavirus")
