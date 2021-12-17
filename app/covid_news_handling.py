@@ -103,6 +103,8 @@ def news_API_request(covid_terms="Covid COVID-19 coronavirus"):
 
 #Create an empty list to store all new data
 news = []
+#Create an empty list to store all news articles that are removed by the user
+deleted_articles = []
 def update_news(force_update=False):
     """
     Summary of update_news
