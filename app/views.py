@@ -6,12 +6,10 @@ from app import app
 import sched
 from requests.api import get
 
-from flask import request, render_template, redirect
+from flask import request, render_template
 from app.covid_data_handler import process_local_data, process_national_data, \
     schedule_covid_updates, updates
-from app.covid_news_handling import news
-
-from app.run_tests import main
+from app.covid_news_handling import news, update_news, deleted_articles
 
 from app.logger import logging
 
@@ -27,14 +25,17 @@ from app.logger import logging
 user_update_sched = sched.scheduler()
 logging.info("Starting up scheduler")
 
-#startup for tests module 
-main
-logging.info("Starting up testing module")
+#Start up news module
+update_news()
 
 #App route for running the code on URL/index
 #Defining backend functionality of the app running on the given URL
 @app.route("/index")
 def index():
+
+    print(news)
+
+    print(deleted_articles)
 
     #Start up of the scheduler
     user_update_sched.run(blocking=False)
@@ -78,8 +79,12 @@ def index():
            updates.remove(update_item)
 
     for news_item in news:
+        for deleted_item in deleted_articles:
+            if deleted_item == news_item:
+                news.remove(news_item)
         if news_item['title'] == news_to_remove:
            news.remove(news_item)
+           deleted_articles.append(news_item)
 
     #Return statement to load data and infomation for the user
     return render_template(
