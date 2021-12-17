@@ -1,0 +1,288 @@
+INFO - 2021-12-16 18:01:43,887 - Trying to load test file:{'test_data_file': 'app/static/data/nation_2021-10-28.csv', 'location_local': 'Exeter', 'locationType_local': 'ltla', 'location_national': 'England', 'locationType_national': 'nation', 'custom_covid_terms': 'Covid COVID-19 coronavirus', 'news_api_key': 'fa911b96da8e420896662203b484274c'}
+INFO - 2021-12-16 18:01:44,018 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 2021-12-16 18:01:48,333 - 127.0.0.1 - - [16/Dec/2021 18:01:48] "[33mGET / HTTP/1.1[0m" 404 -
+INFO - 2021-12-16 18:01:51,486 - Checking for cached data
+INFO - 2021-12-16 18:01:51,486 - Requesting live data
+DEBUG - 2021-12-16 18:01:51,490 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:01:51,872 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DExeter%3BareaType%3Dltla&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG - 2021-12-16 18:01:51,880 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:01:52,114 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DExeter%3BareaType%3Dltla&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO - 2021-12-16 18:01:52,137 - Managed to process local data
+INFO - 2021-12-16 18:01:52,137 - Checking for cached data
+INFO - 2021-12-16 18:01:52,137 - Requesting live data
+DEBUG - 2021-12-16 18:01:52,139 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:01:52,412 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DEngland%3BareaType%3Dnation&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG - 2021-12-16 18:01:52,420 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:01:52,656 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DEngland%3BareaType%3Dnation&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO - 2021-12-16 18:01:52,661 - Managed to process national data
+INFO - 2021-12-16 18:01:52,668 - 127.0.0.1 - - [16/Dec/2021 18:01:52] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:01:52,780 - 127.0.0.1 - - [16/Dec/2021 18:01:52] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:01:55,778 - 127.0.0.1 - - [16/Dec/2021 18:01:55] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:02,859 - Checking for cached data
+INFO - 2021-12-16 18:02:02,860 - found cached data
+INFO - 2021-12-16 18:02:02,860 - Managed to process local data
+INFO - 2021-12-16 18:02:02,860 - Checking for cached data
+INFO - 2021-12-16 18:02:02,860 - found cached data
+INFO - 2021-12-16 18:02:02,861 - Managed to process national data
+INFO - 2021-12-16 18:02:02,861 - Scheduling a run in:86398.0
+INFO - 2021-12-16 18:02:02,862 - 127.0.0.1 - - [16/Dec/2021 18:02:02] "GET /index?update=18%3A02&two=covid+data&covid-data=covid-data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:02:02,888 - 127.0.0.1 - - [16/Dec/2021 18:02:02] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:04,488 - Checking for cached data
+INFO - 2021-12-16 18:02:04,490 - found cached data
+INFO - 2021-12-16 18:02:04,490 - Managed to process local data
+INFO - 2021-12-16 18:02:04,491 - Checking for cached data
+INFO - 2021-12-16 18:02:04,491 - found cached data
+INFO - 2021-12-16 18:02:04,491 - Managed to process national data
+INFO - 2021-12-16 18:02:04,492 - 127.0.0.1 - - [16/Dec/2021 18:02:04] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:02:04,531 - 127.0.0.1 - - [16/Dec/2021 18:02:04] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:07,124 - Checking for cached data
+INFO - 2021-12-16 18:02:07,125 - found cached data
+INFO - 2021-12-16 18:02:07,125 - Managed to process local data
+INFO - 2021-12-16 18:02:07,125 - Checking for cached data
+INFO - 2021-12-16 18:02:07,126 - found cached data
+INFO - 2021-12-16 18:02:07,126 - Managed to process national data
+INFO - 2021-12-16 18:02:07,128 - 127.0.0.1 - - [16/Dec/2021 18:02:07] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:02:07,150 - 127.0.0.1 - - [16/Dec/2021 18:02:07] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:07,162 - 127.0.0.1 - - [16/Dec/2021 18:02:07] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:08,960 - Checking for cached data
+INFO - 2021-12-16 18:02:08,960 - found cached data
+INFO - 2021-12-16 18:02:08,961 - Managed to process local data
+INFO - 2021-12-16 18:02:08,961 - Checking for cached data
+INFO - 2021-12-16 18:02:08,961 - found cached data
+INFO - 2021-12-16 18:02:08,961 - Managed to process national data
+INFO - 2021-12-16 18:02:08,963 - 127.0.0.1 - - [16/Dec/2021 18:02:08] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:02:08,983 - 127.0.0.1 - - [16/Dec/2021 18:02:08] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:09,004 - 127.0.0.1 - - [16/Dec/2021 18:02:09] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:09,829 - Checking for cached data
+INFO - 2021-12-16 18:02:09,830 - found cached data
+INFO - 2021-12-16 18:02:09,831 - Managed to process local data
+INFO - 2021-12-16 18:02:09,831 - Checking for cached data
+INFO - 2021-12-16 18:02:09,831 - found cached data
+INFO - 2021-12-16 18:02:09,832 - Managed to process national data
+INFO - 2021-12-16 18:02:09,832 - 127.0.0.1 - - [16/Dec/2021 18:02:09] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:02:09,850 - 127.0.0.1 - - [16/Dec/2021 18:02:09] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:09,869 - 127.0.0.1 - - [16/Dec/2021 18:02:09] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:16,355 - Checking for cached data
+INFO - 2021-12-16 18:02:16,355 - found cached data
+INFO - 2021-12-16 18:02:16,356 - Managed to process local data
+INFO - 2021-12-16 18:02:16,356 - Checking for cached data
+INFO - 2021-12-16 18:02:16,356 - found cached data
+INFO - 2021-12-16 18:02:16,357 - Managed to process national data
+INFO - 2021-12-16 18:02:16,359 - 127.0.0.1 - - [16/Dec/2021 18:02:16] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:02:16,386 - 127.0.0.1 - - [16/Dec/2021 18:02:16] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:02:53,979 - Checking for cached data
+INFO - 2021-12-16 18:02:53,980 - found cached data
+INFO - 2021-12-16 18:02:53,981 - Managed to process local data
+INFO - 2021-12-16 18:02:53,982 - Checking for cached data
+INFO - 2021-12-16 18:02:53,984 - found cached data
+INFO - 2021-12-16 18:02:53,985 - Managed to process national data
+INFO - 2021-12-16 18:02:53,986 - 127.0.0.1 - - [16/Dec/2021 18:02:53] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:02:54,016 - 127.0.0.1 - - [16/Dec/2021 18:02:54] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:03:03,172 - Checking for cached data
+INFO - 2021-12-16 18:03:03,173 - found cached data
+INFO - 2021-12-16 18:03:03,173 - Managed to process local data
+INFO - 2021-12-16 18:03:03,174 - Checking for cached data
+INFO - 2021-12-16 18:03:03,174 - found cached data
+INFO - 2021-12-16 18:03:03,175 - Managed to process national data
+INFO - 2021-12-16 18:03:03,176 - 127.0.0.1 - - [16/Dec/2021 18:03:03] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:03:03,201 - 127.0.0.1 - - [16/Dec/2021 18:03:03] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:03:05,919 - Checking for cached data
+INFO - 2021-12-16 18:03:05,920 - found cached data
+INFO - 2021-12-16 18:03:05,920 - Managed to process local data
+INFO - 2021-12-16 18:03:05,921 - Checking for cached data
+INFO - 2021-12-16 18:03:05,921 - found cached data
+INFO - 2021-12-16 18:03:05,921 - Managed to process national data
+INFO - 2021-12-16 18:03:05,921 - 127.0.0.1 - - [16/Dec/2021 18:03:05] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:03:05,945 - 127.0.0.1 - - [16/Dec/2021 18:03:05] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:03:06,104 - 127.0.0.1 - - [16/Dec/2021 18:03:06] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:03:17,545 - Checking for cached data
+INFO - 2021-12-16 18:03:17,545 - found cached data
+INFO - 2021-12-16 18:03:17,545 - Managed to process local data
+INFO - 2021-12-16 18:03:17,546 - Checking for cached data
+INFO - 2021-12-16 18:03:17,546 - found cached data
+INFO - 2021-12-16 18:03:17,546 - Managed to process national data
+INFO - 2021-12-16 18:03:17,548 - 127.0.0.1 - - [16/Dec/2021 18:03:17] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:03:17,578 - 127.0.0.1 - - [16/Dec/2021 18:03:17] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:04:17,670 - Checking for cached data
+INFO - 2021-12-16 18:04:17,671 - found cached data
+INFO - 2021-12-16 18:04:17,671 - Managed to process local data
+INFO - 2021-12-16 18:04:17,671 - Checking for cached data
+INFO - 2021-12-16 18:04:17,671 - found cached data
+INFO - 2021-12-16 18:04:17,672 - Managed to process national data
+INFO - 2021-12-16 18:04:17,672 - 127.0.0.1 - - [16/Dec/2021 18:04:17] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:04:17,686 - 127.0.0.1 - - [16/Dec/2021 18:04:17] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:06,229 - Trying to load test file:{'test_data_file': 'app/static/data/nation_2021-10-28.csv', 'location_local': 'Exeter', 'locationType_local': 'ltla', 'location_national': 'England', 'locationType_national': 'nation', 'custom_covid_terms': 'Covid COVID-19 coronavirus', 'news_api_key': 'fa911b96da8e420896662203b484274c'}
+INFO - 2021-12-16 18:05:06,301 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 2021-12-16 18:05:10,566 - Checking for cached data
+INFO - 2021-12-16 18:05:10,567 - Requesting live data
+DEBUG - 2021-12-16 18:05:10,571 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:05:10,913 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DExeter%3BareaType%3Dltla&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG - 2021-12-16 18:05:10,917 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:05:11,166 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DExeter%3BareaType%3Dltla&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO - 2021-12-16 18:05:11,173 - Managed to process local data
+INFO - 2021-12-16 18:05:11,173 - Checking for cached data
+INFO - 2021-12-16 18:05:11,173 - Requesting live data
+DEBUG - 2021-12-16 18:05:11,176 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:05:11,520 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DEngland%3BareaType%3Dnation&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG - 2021-12-16 18:05:11,525 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+INFO - 2021-12-16 18:05:12,959 - Checking for cached data
+INFO - 2021-12-16 18:05:12,961 - found cached data
+INFO - 2021-12-16 18:05:12,961 - Managed to process local data
+INFO - 2021-12-16 18:05:12,962 - Checking for cached data
+INFO - 2021-12-16 18:05:12,963 - Requesting live data
+DEBUG - 2021-12-16 18:05:12,967 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:05:13,044 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DEngland%3BareaType%3Dnation&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG - 2021-12-16 18:05:13,054 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:05:13,138 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DEngland%3BareaType%3Dnation&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO - 2021-12-16 18:05:13,146 - Managed to process national data
+INFO - 2021-12-16 18:05:13,158 - 127.0.0.1 - - [16/Dec/2021 18:05:13] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:13,308 - 127.0.0.1 - - [16/Dec/2021 18:05:13] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:13,418 - 127.0.0.1 - - [16/Dec/2021 18:05:13] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:14,265 - Checking for cached data
+INFO - 2021-12-16 18:05:14,266 - found cached data
+INFO - 2021-12-16 18:05:14,267 - Managed to process local data
+INFO - 2021-12-16 18:05:14,267 - Checking for cached data
+INFO - 2021-12-16 18:05:14,268 - found cached data
+INFO - 2021-12-16 18:05:14,268 - Managed to process national data
+INFO - 2021-12-16 18:05:14,268 - 127.0.0.1 - - [16/Dec/2021 18:05:14] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:14,289 - 127.0.0.1 - - [16/Dec/2021 18:05:14] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:14,317 - 127.0.0.1 - - [16/Dec/2021 18:05:14] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+DEBUG - 2021-12-16 18:05:14,828 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DEngland%3BareaType%3Dnation&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO - 2021-12-16 18:05:14,833 - Managed to process national data
+INFO - 2021-12-16 18:05:14,834 - 127.0.0.1 - - [16/Dec/2021 18:05:14] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:16,148 - 127.0.0.1 - - [16/Dec/2021 18:05:16] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:17,303 - Checking for cached data
+INFO - 2021-12-16 18:05:17,304 - found cached data
+INFO - 2021-12-16 18:05:17,304 - Managed to process local data
+INFO - 2021-12-16 18:05:17,305 - Checking for cached data
+INFO - 2021-12-16 18:05:17,305 - found cached data
+INFO - 2021-12-16 18:05:17,305 - Managed to process national data
+INFO - 2021-12-16 18:05:17,306 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:17,324 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:17,340 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:17,720 - Checking for cached data
+INFO - 2021-12-16 18:05:17,720 - found cached data
+INFO - 2021-12-16 18:05:17,720 - Managed to process local data
+INFO - 2021-12-16 18:05:17,721 - Checking for cached data
+INFO - 2021-12-16 18:05:17,721 - found cached data
+INFO - 2021-12-16 18:05:17,721 - Managed to process national data
+INFO - 2021-12-16 18:05:17,722 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:17,748 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:17,766 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:17,902 - Checking for cached data
+INFO - 2021-12-16 18:05:17,903 - found cached data
+INFO - 2021-12-16 18:05:17,903 - Managed to process local data
+INFO - 2021-12-16 18:05:17,904 - Checking for cached data
+INFO - 2021-12-16 18:05:17,904 - found cached data
+INFO - 2021-12-16 18:05:17,905 - Managed to process national data
+INFO - 2021-12-16 18:05:17,905 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:17,931 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:17,954 - 127.0.0.1 - - [16/Dec/2021 18:05:17] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:22,981 - Checking for cached data
+INFO - 2021-12-16 18:05:22,982 - found cached data
+INFO - 2021-12-16 18:05:22,982 - Managed to process local data
+INFO - 2021-12-16 18:05:22,983 - Checking for cached data
+INFO - 2021-12-16 18:05:22,983 - found cached data
+INFO - 2021-12-16 18:05:22,983 - Managed to process national data
+INFO - 2021-12-16 18:05:22,984 - Scheduling a run in:38.0
+INFO - 2021-12-16 18:05:22,985 - 127.0.0.1 - - [16/Dec/2021 18:05:22] "GET /index?update=18%3A06&two=covid+data&covid-data=covid-data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:23,007 - 127.0.0.1 - - [16/Dec/2021 18:05:23] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:25,426 - Checking for cached data
+INFO - 2021-12-16 18:05:25,427 - found cached data
+INFO - 2021-12-16 18:05:25,429 - Managed to process local data
+INFO - 2021-12-16 18:05:25,430 - Checking for cached data
+INFO - 2021-12-16 18:05:25,430 - found cached data
+INFO - 2021-12-16 18:05:25,431 - Managed to process national data
+INFO - 2021-12-16 18:05:25,431 - 127.0.0.1 - - [16/Dec/2021 18:05:25] "GET /index?update_item=covid+data HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:25,465 - 127.0.0.1 - - [16/Dec/2021 18:05:25] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:05:31,166 - Checking for cached data
+INFO - 2021-12-16 18:05:31,166 - found cached data
+INFO - 2021-12-16 18:05:31,166 - Managed to process local data
+INFO - 2021-12-16 18:05:31,167 - Checking for cached data
+INFO - 2021-12-16 18:05:31,167 - found cached data
+INFO - 2021-12-16 18:05:31,167 - Managed to process national data
+INFO - 2021-12-16 18:05:31,168 - 127.0.0.1 - - [16/Dec/2021 18:05:31] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:05:31,192 - 127.0.0.1 - - [16/Dec/2021 18:05:31] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:06:31,257 - Scheduled run
+INFO - 2021-12-16 18:06:31,258 - Checking for cached data
+INFO - 2021-12-16 18:06:31,258 - Requesting live data
+DEBUG - 2021-12-16 18:06:31,260 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:06:31,371 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DExeter%3BareaType%3Dltla&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG - 2021-12-16 18:06:31,378 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:06:31,474 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DExeter%3BareaType%3Dltla&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO - 2021-12-16 18:06:31,479 - Managed to process local data
+INFO - 2021-12-16 18:06:31,480 - Checking for cached data
+INFO - 2021-12-16 18:06:31,480 - Requesting live data
+DEBUG - 2021-12-16 18:06:31,482 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:06:31,566 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DEngland%3BareaType%3Dnation&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG - 2021-12-16 18:06:31,572 - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG - 2021-12-16 18:06:31,648 - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaName%3DEngland%3BareaType%3Dnation&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO - 2021-12-16 18:06:31,653 - Managed to process national data
+INFO - 2021-12-16 18:06:31,654 - Checking for cached data
+INFO - 2021-12-16 18:06:31,654 - found cached data
+INFO - 2021-12-16 18:06:31,654 - Managed to process local data
+INFO - 2021-12-16 18:06:31,655 - Checking for cached data
+INFO - 2021-12-16 18:06:31,655 - found cached data
+INFO - 2021-12-16 18:06:31,655 - Managed to process national data
+INFO - 2021-12-16 18:06:31,656 - 127.0.0.1 - - [16/Dec/2021 18:06:31] "GET /index HTTP/1.1" 200 -
+INFO - 2021-12-16 18:06:31,672 - 127.0.0.1 - - [16/Dec/2021 18:06:31] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:06:31,693 - 127.0.0.1 - - [16/Dec/2021 18:06:31] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:07:07,456 - Checking for cached data
+INFO - 2021-12-16 18:07:07,457 - found cached data
+INFO - 2021-12-16 18:07:07,457 - Managed to process local data
+INFO - 2021-12-16 18:07:07,458 - Checking for cached data
+INFO - 2021-12-16 18:07:07,458 - found cached data
+INFO - 2021-12-16 18:07:07,458 - Managed to process national data
+INFO - 2021-12-16 18:07:07,458 - Scheduling a run in:53.0
+INFO - 2021-12-16 18:07:07,459 - 127.0.0.1 - - [16/Dec/2021 18:07:07] "GET /index?update=18%3A08&two=test1&news=news HTTP/1.1" 200 -
+INFO - 2021-12-16 18:07:07,482 - 127.0.0.1 - - [16/Dec/2021 18:07:07] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:07:09,627 - Checking for cached data
+INFO - 2021-12-16 18:07:09,630 - found cached data
+INFO - 2021-12-16 18:07:09,630 - Managed to process local data
+INFO - 2021-12-16 18:07:09,631 - Checking for cached data
+INFO - 2021-12-16 18:07:09,631 - found cached data
+INFO - 2021-12-16 18:07:09,631 - Managed to process national data
+ERROR - 2021-12-16 18:07:09,632 - Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\users\ollym\desktop\python_project\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\ollym\desktop\python_project\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\ollym\desktop\python_project\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\ollym\desktop\python_project\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\ollym\Desktop\python_project\app\views.py", line 59, in index
+    update_covid_data.remove(update_item)
+ValueError: list.remove(x): x not in list
+INFO - 2021-12-16 18:07:09,635 - 127.0.0.1 - - [16/Dec/2021 18:07:09] "[35m[1mGET /index?update_item=test1 HTTP/1.1[0m" 500 -
+INFO - 2021-12-16 18:07:16,891 - Checking for cached data
+INFO - 2021-12-16 18:07:16,891 - found cached data
+INFO - 2021-12-16 18:07:16,892 - Managed to process local data
+INFO - 2021-12-16 18:07:16,892 - Checking for cached data
+INFO - 2021-12-16 18:07:16,892 - found cached data
+INFO - 2021-12-16 18:07:16,893 - Managed to process national data
+INFO - 2021-12-16 18:07:16,893 - Scheduling a run in:44.0
+INFO - 2021-12-16 18:07:16,894 - 127.0.0.1 - - [16/Dec/2021 18:07:16] "GET /index?update=18%3A08&two=test1&news=news HTTP/1.1" 200 -
+INFO - 2021-12-16 18:07:16,912 - 127.0.0.1 - - [16/Dec/2021 18:07:16] "[36mGET /static/images/titleimage.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:07:16,928 - 127.0.0.1 - - [16/Dec/2021 18:07:16] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+INFO - 2021-12-16 18:07:22,408 - Checking for cached data
+INFO - 2021-12-16 18:07:22,410 - found cached data
+INFO - 2021-12-16 18:07:22,410 - Managed to process local data
+INFO - 2021-12-16 18:07:22,411 - Checking for cached data
+INFO - 2021-12-16 18:07:22,411 - found cached data
+INFO - 2021-12-16 18:07:22,412 - Managed to process national data
+ERROR - 2021-12-16 18:07:22,412 - Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\users\ollym\desktop\python_project\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\ollym\desktop\python_project\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\ollym\desktop\python_project\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\ollym\desktop\python_project\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\ollym\Desktop\python_project\app\views.py", line 59, in index
+    update_covid_data.remove(update_item)
+ValueError: list.remove(x): x not in list
+INFO - 2021-12-16 18:07:22,414 - 127.0.0.1 - - [16/Dec/2021 18:07:22] "[35m[1mGET /index?update_item=test1 HTTP/1.1[0m" 500 -
